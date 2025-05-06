@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min CV-sida - Kontakt</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Min Professionella Sida</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="about.html">Om mig</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li class="active"><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="two-columns">
+            <div class="column">
+                <h2>Kontakta mig</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Namn</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-post</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Ämne</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Meddelande</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Skicka</button>
+                </form>
+            </div>
+            <div class="column">
+                <h2>Kontaktinformation</h2>
+                <p><strong>E-post:</strong> fornamn.efternamn@example.com</p>
+                <p><strong>Telefon:</strong> 070-123 45 67</p>
+                <p><strong>Adress:</strong> Exempelgatan 12, 123 45 Stockholm</p>
+                
+                <h3>Sociala medier</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">Twitter</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Min Professionella Sida</p>
+            <p id="easter-egg-trigger">Tryck här för en överraskning!</p>
+        </div>
+    </footer>
+
+    <div id="easter-egg-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Påskägg hittat!</h2>
+            <p>Grattis! Du hittade ett av de dolda påskäggen på denna sida.</p>
+            <p>Testa att skriva "1234" på tangentbordet för att hitta det andra påskägget!</p>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

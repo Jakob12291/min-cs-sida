@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min CV-sida - Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Min Professionella Sida</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="about.html">Om mig</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Mina Projekt</h1>
+        
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="images/1.jpg" alt="Projekt 1">
+                <h3>E-handelsplattform</h3>
+                <p>En fullstack-lösning för små företag.</p>
+                <a href="#1" class="btn">Mer information</a>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="images/2.jpg" alt="Projekt 2">
+                <h3>Mobilapp för träning</h3>
+                <p>React Native-app för träningsregistrering.</p>
+                <a href="#2" class="btn">Mer information</a>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="images/3.jpg" alt="Projekt 3">
+                <h3>Portfolio-webbplats</h3>
+                <p>Modern webbplats för kreativa yrkesutövare.</p>
+                <a href="#3" class="btn">Mer information</a>
+            </div>
+        </div>
+
+        <!-- Modals for projects -->
+        <div id="project1" class="modal">
+            <div class="modal-content">
+                <a href="#" class="close">&times;</a>
+                <h2>E-handelsplattform</h2>
+                <img src="images/1.jpg" alt="Projekt 1">
+                <p>Denna e-handelsplattform utvecklades med MERN-stacken (MongoDB, Express, React, Node.js). Plattformen inkluderar:</p>
+                <ul>
+                    <li>Produktkatalog med filtrering</li>
+                    <li>Kundvagn och kassasystem</li>
+                    <li>Användarkonton och orderhistorik</li>
+                    <li>Adminpanel för produkt- och orderhantering</li>
+                </ul>
+                <p>Projektet tog 6 månader att slutföra och användes av 5 småföretag under testfasen.</p>
+            </div>
+        </div>
+
+        <div id="project2" class="modal">
+            <div class="modal-content">
+                <a href="#" class="close">&times;</a>
+                <h2>Mobilapp för träning</h2>
+                <img src="images/2.jpg" alt="Projekt 2">
+                <p>Denna mobilapp utvecklades i React Native och inkluderar:</p>
+                <ul>
+                    <li>Träningslogg med statistik</li>
+                    <li>Anpassade träningsprogram</li>
+                    <li>Integrering med hälso-API:er</li>
+                    <li>Push-notifikationer för motivation</li>
+                </ul>
+                <p>Appen har över 500 aktiva användare och en 4.5-stjärnig betyg i appbutiker.</p>
+            </div>
+        </div>
+
+        <div id="project3" class="modal">
+            <div class="modal-content">
+                <a href="#" class="close">&times;</a>
+                <h2>Portfolio-webbplats</h2>
+                <img src="images/3.jpg" alt="Projekt 3">
+                <p>Denna portfolio-webbplats utvecklades för kreativa yrkesutövare och inkluderar:</p>
+                <ul>
+                    <li>Responsiv design för alla enheter</li>
+                    <li>Projektgalleri med filtrering</li>
+                    <li>Kontaktformulär med validering</li>
+                    <li>CMS-integration för enkel uppdatering</li>
+                </ul>
+                <p>Webbplatsen har implementerats för 15 olika kunder inom design- och fotoindustrin.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Min Professionella Sida</p>
+            <p id="easter-egg-trigger">Tryck här för en överraskning!</p>
+        </div>
+    </footer>
+
+    <div id="easter-egg-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Påskägg hittat!</h2>
+            <p>Grattis! Du hittade ett av de dolda påskäggen på denna sida.</p>
+            <p>Testa att skriva "1234" på tangentbordet för att hitta det andra påskägget!</p>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

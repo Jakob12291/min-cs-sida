@@ -1,0 +1,52 @@
+/* Print-specific styles */
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.3;
+    }
+
+    header, footer, nav {
+        display: none;
+    }
+
+    a, a:visited {
+        text-decoration: underline;
+    }
+
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 90%;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .cv-item {
+        page-break-inside: avoid;
+    }
+
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+
+    .btn, .btn-secondary, .social-links, #easter-egg-trigger {
+        display: none !important;
+    }
+
+    .two-columns {
+        display: block !important;
+    }
+
+    .column img {
+        display: none;
+    }
+}
